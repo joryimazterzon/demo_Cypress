@@ -15,10 +15,5 @@
 
 // Import commands.js using ES2015 syntax:
 import "./commands";
-import { Before } from "@badeball/cypress-cucumber-preprocessor";
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
-
-Before({ tags: "@sauceLogin" }, () => {
-  cy.visit("https://www.saucedemo.com/");
-});
