@@ -29,7 +29,8 @@
   "main": "cypress.config.js",
   "scripts": {
     "test": "mocha",
-    "cy:runChrome": ""
+    "cy:runChrome": "cypress run --browser chrome --headless",
+    "cy:openChrome": "cypress open --browser chrome"
   },
   "repository": {
     "type": "git",

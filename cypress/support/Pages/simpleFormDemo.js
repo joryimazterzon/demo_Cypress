@@ -35,4 +35,32 @@ export default class SimpleForm extends InputForms {
     cy.get(selector.showMessageBtn).click();
     cy.get(selector.yourMessageLb).should("have.text", message);
   }
+
+  /**
+   * Enter numbers A and B in the textbox to be summed
+   *
+   * @argument {String} number_A
+   * @argument {String} number_B
+   *
+   *
+   * @example
+   *    SimpleForm.enterTwoNumbers('34','93')
+   */
+  enterTwoNumbers(number_A, number_B) {
+    cy.get(selector.valueATxb).type(number_A);
+    cy.get(selector.valueBTxb).type(number_B);
+  }
+
+  /**
+   * Validates the sum of the values entered
+   *
+   * @argument {String} result of the sum to be compared
+   *
+   * @example
+   *    SimpleForm.validateSum('78')
+   */
+  validateSum(result) {
+    cy.get(selector.getTotalBtn).click();
+    cy.get(selector.totalSumLb).should("have.text", result);
+  }
 }
