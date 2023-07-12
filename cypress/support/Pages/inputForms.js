@@ -11,7 +11,8 @@ export default class InputForms {
    */
   visitExample(example) {
     const examples = {
-      "Simple Form Demo": "/basic-first-form-demo.html",
+      'Simple Form Demo': '/basic-first-form-demo.html',
+      'Checkbox Demo': '/basic-checkbox-demo.html',
     };
     cy.visit(examples[example]);
   }
