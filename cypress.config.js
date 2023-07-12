@@ -18,5 +18,6 @@ module.exports = defineConfig({
       return config;
     },
     specPattern: "cypress/e2e/**/*.feature",
+    baseUrl: "https://demo.seleniumeasy.com/",
   },
 });

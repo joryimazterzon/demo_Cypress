@@ -28,7 +28,8 @@
   "version": "1.0.0",
   "main": "cypress.config.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "cy:runChrome": ""
   },
   "repository": {
     "type": "git",
