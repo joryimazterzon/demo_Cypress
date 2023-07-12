@@ -6,26 +6,32 @@ This project will demonstrate the use and flexibility of Cypress for testing
 
 To run this project, you will need to install the dependencies by running
 
-`npm install`
+```bash
+  npm install
+```
 
-And add the following environment variables to your .env file
-
-`BASE_URL` - URL of Amazon
-
-`PRODUCT` - Name of the product to search
-
-`THRESHOLD` - Amount of products to be considered
-
-Finally run the command
-
-`npm cy:Chrome`
+Make sure your node version is the latest
 
 ## Features
 
-- Search Product
-- Select chepest product from results
-- Checkout product
+- Fill a Simple Form
+- Validate Checkboxes
+- Validate simple website for POP
+- Perform a basic Login with Saw Labs demo
+
+## Running Tests
+
+To run all e2e tests, run the following command
+
+```bash
+  npm run cy:runChrome
+```
 
 ## Authors
 
 - [@joryimazterzon](https://github.com/joryimazterzon)
+
+## 🚀 About Me
+
+I'm a passionate quality assurance engineer who's willing to contribute in the best way to the quality of the products. I am constantly improving my technical skills with ISTQB and Platzi certifications.
+I am looking for new challenges across the globe.
